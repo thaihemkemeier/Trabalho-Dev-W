@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .formulario{
+            border-radius: 15px;
+        }
+        #text{
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+        input{
+            box-shadow: 12px 12px 12px teal;
+        }
+        button{
+            box-shadow: 10px 10px 10px teal;
+        }
+
+    </style>
+</head>
+<body>
+    <form class="formulario" action="/submit" method="post">
+        <label for="text">Name</label>
+        <input type="text" id="text" name="text"><br><br>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="text" name="password"><br><br>
+        <button>
+            <P>enviar</P>
+        </button>           
+
+    </form>
+    
+</body>
+</html>
