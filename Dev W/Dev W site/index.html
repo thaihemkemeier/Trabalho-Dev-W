@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 150px; ;
+            height: 150px; ;
+            border-radius: 25px;
+
+        }
+        #Cardápio{
+            display: flex;
+            flex-direction: row;
+        }
+        .comida{
+            margin: 10px;
+            text-align: center;
+            border: 1px solid black; 
+            border-radius: 25px;
+            
+        }
+        #nome{
+            border: 1px solid black; 
+            border-radius: 25px;
+        }
+        fieldset{
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <h1> Cardápio </h1>
+    <div id="Cardápio">
+        <div class="comida">
+            <img src="x-salada.jpeg" alt="x-salada">
+            <p id="nome">x-salada</p>
+            <p>34,00</p>
+        </div>
+        <div class="comida">
+            <img src="pizza.jpeg" alt="pizza">
+            <p id="nome">pizza</p>
+            <p>50,00</p>
+        </div>
+        <div class="comida">
+            <img src="macarronada.jpeg" alt="macarronada">
+            <p id="nome">macarronada</p>
+            <p>32,00</p>
+        </div>
+        <div class="comida">
+            <img src="sushi.jpeg" alt="sushi">
+            <p id="nome">sushi</p>
+            <p>60,00</p>
+        </div>
+
+    </div>
+    <div>
+        <fieldset>
+            <form> 
+                <legend>Comida favorita</legend> 
+                <input type="radio" name="Comida favorita:" id="x-salada"><label for="x-salada">x-salada</label>
+                <input type="radio" name="Comida favorita:" id="pizza"><label for="pizza">pizza</label>
+                <input type="radio" name="Comida favorita:" id="macarronada"><label for="macarronada">macarronada</label>
+                <input type="radio" name="Comida favorita:" id="sushi"><label for="sushi">sushi</label>
+                <button>Enviar</button>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
